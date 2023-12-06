@@ -30,4 +30,7 @@ fun EntrySiswaScreen(
     modifier: Modifier = Modifier,
     viewModel: EntryViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ){
+    val coroutineScope = rememberCoroutineScope()
+    val scrollBehavior =
+        TopAppBarDefaults.enterAlwaysScrollBehavior()
 }
